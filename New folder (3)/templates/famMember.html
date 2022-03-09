@@ -1,0 +1,43 @@
+
+{% extends 'layout.html' %}
+{% block body %}
+<div class="container-fluid mt-1">
+  <h1 class="my-3">Family Register</h1>
+  <form form action="{{url_for('famMember')}}" method="post">
+    <div class="mb-3 col-xl-5" class="form-group">
+      <label for="FirstName" class="form-label">Firstname</label>
+      <input type="text" name="Fname" required class="form-control" />
+    </div>
+    <div class="mb-3 col-xl-5">
+      <label for="exampleInputPassword1" class="form-label">Lastname</label>
+      <input type="text" name="Lname" required class="form-control" />
+    </div>
+    <div class="mb-3 col-xl-5">
+      <label for="UserEmail" class="form-label">Email</label>
+      <input type="email" name="email" required class="form-control" />
+    </div>
+    <div class="mb-3 col-xl-5">
+      <label for="UserPhone" class="form-label">Phone</label>
+      <input type="text" name="phone" required class="form-control" />
+    </div>
+    <div class="mb-3 col-xl-5">
+      <label for="RelName" class="form-label">Family-relation</label>
+      <input name="family-rel" type="text" class="form-control" />
+    </div>
+    <div class="mb-3 col-xl-5">
+      <label for="LocName" class="form-label">Location</label>
+      <input name="Location" type="text" class="form-control" />
+    </div>
+    <div class="mb-3 col-xl-5">
+      <label for="UserPassword" class="form-label">Password</label>
+      <input type="password" name="upass" required class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary" role="button">
+      Register
+    </button>
+    <a type="submit" class="btn btn-primary mx-3 my-3" href="./login.html"
+      >Login</a
+    >
+  </form>
+</div>
+{% endblock %}
