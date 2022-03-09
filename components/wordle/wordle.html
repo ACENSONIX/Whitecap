@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <link rel="shortcut icon" href="io-digitalsnacks-wordchallenge.ico" >
+    <link rel="stylesheet" href="wordle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One"
+      rel="stylesheet"
+    /> -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#" style="color: white; text-decoration: none; padding-left: 20px;">We - Care</a>
+        <a href="../patients/Patient_homePage.html" class="navbar-brand" style="color: white; text-decoration: none; margin: 10px;">Home</a>
+      <!-- <div class="container-fluid">
+        <a class="navbar-brand" href="#">We - Care</a>
+        <a href="./Patient_Profile.html" class="navbar-brand">Profile</a>
+      </div> -->
+  </nav>
+    <!-- <nav>
+      <div class="navbar">Wordle
+        <p>
+        <button id="help">?</button>
+        <span id="title">Wordle</span> 
+        <button id="leaderboard">leaderboard</button>
+        </p>
+      </div>
+    </nav> -->
+    
+    <div class="container">
+      <table id="guessTable">
+        <tr id="line1">
+          <td class="data" id="box1"></td>
+          <td class="data" id="box2"></td>
+          <td class="data" id="box3"></td>
+          <td class="data" id="box4"></td>
+          <td class="data" id="box5"></td>
+        </tr>
+        <tr id="line2">
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+        </tr>
+        <tr id="line3">
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+        </tr>
+        <tr id="line4">
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+        </tr>
+        <tr id="line5">
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+        </tr>
+        <tr id="line6">
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+          <td class="data"></td>
+        </tr>
+      </table>
+      <div class="keyboard" id="">
+        <div class="row1">
+          <button class="keys">Q</button>
+          <button class="keys">W</button>
+          <button class="keys">E</button>
+          <button class="keys">R</button>
+          <button class="keys">T</button>
+          <button class="keys">Y</button>
+          <button class="keys">U</button>
+          <button class="keys">I</button>
+          <button class="keys">O</button>
+          <button class="keys">P</button>
+        </div>
+        <div class="row2">
+          <button class="keys">A</button>
+          <button class="keys">S</button>
+          <button class="keys">D</button>
+          <button class="keys">F</button>
+          <button class="keys">G</button>
+          <button class="keys">H</button>
+          <button class="keys">J</button>
+          <button class="keys">K</button>
+          <button class="keys">L</button>
+        </div>
+        <div class="row3">
+          <button id="enter">Enter</button>
+          <button class="keys">Z</button>
+          <button class="keys">X</button>
+          <button class="keys">C</button>
+          <button class="keys">V</button>
+          <button class="keys">B</button>
+          <button class="keys">N</button>
+          <button class="keys">M</button>
+          <button id="Backspace">Back</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="wordle.js"></script>
+  </body>
+</html>
+
+<!-- 
+  resize
+  toastr validation popups
+  leaderboard - schema
+  
+ -->

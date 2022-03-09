@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #e9ec1d, #e66013);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    background: white;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 300px;
+}
+
+.container h1{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    border-bottom: #980dc2 1px solid;
+}
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caretaker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">We - Care</a>
+          <a href="./caretaker_profile.html" class="navbar-brand">Profile</a>
+        </div>
+    </nav>
+    <div class="header">
+        <p id="patient_name">Name: </p>
+        <p id="p_id">Patient Id: </p>  
+    </div>
+    <div class="diet container-fluid">
+        <h1>Diet</h1>
+        <ol id="list">
+        </ol>
+        <input type="text" class="form-control" placeholder="Enter food item" aria-label="Recipient's username" aria-describedby="button-addon2" id="input">
+        <input type="text" class="form-control" placeholder="Enter Calories" aria-label="Recipient's username" aria-describedby="button-addon2" id="calories">
+        <button type="button" class="btn btn-primary" id="add" placeholder="Enter food item">Add</button>
+        <button type="button" class="btn btn-danger" aria-label="Enter calories" id="clear">Clear</button>
+    </div>
+    <div class="meds container-fluid">
+        <h1>Medications</h1>
+        <ol id="medsList">
+        </ol>
+        <input type="text" class="form-control" placeholder="Enter medicine" aria-label="Recipient's username" aria-describedby="button-addon2" id="input_meds">
+        <button type="button" class="btn btn-info" aria-label="Enter calories" id="add_meds">Add</button> 
+    </div>
+    <script src="diet.js"></script>
+</body>
+</html>
