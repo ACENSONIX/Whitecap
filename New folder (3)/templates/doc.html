@@ -2,8 +2,8 @@
 {% extends 'layout.html' %}
 {% block body %}
   <div class="container-fluid mt-1">
-    <h1 class="my-3">Register</h1>
-    <form form action="{{url_for('docreg')}}" method="post">
+    <h1 class="my-3">Dr. Register</h1>
+    <form form action="{{url_for('doc')}}" method="post">
       <div class="mb-3 col-xl-5" class="form-group">
         <label for="FirstName" class="form-label">Firstname</label>
         <input type="text" name="Fname" required class="form-control" />
